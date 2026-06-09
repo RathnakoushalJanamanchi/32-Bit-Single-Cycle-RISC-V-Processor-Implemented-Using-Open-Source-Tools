@@ -1,0 +1,425 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+
+MACRO Data_Memory
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN Data_Memory 0 0 ;
+  SIZE 10.0 BY 10.0 ;
+  SYMMETRY X Y ;
+
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M4 ;
+        RECT 0.0 9.8 0.5 10.0 ;
+    END
+  END clk
+
+  PIN MemRead
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M4 ;
+        RECT 0.5 9.8 1.0 10.0 ;
+    END
+  END MemRead
+
+  PIN MemWrite
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M4 ;
+        RECT 1.0 9.8 1.5 10.0 ;
+    END
+  END MemWrite
+
+  PIN Address[0]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.5 9.8 2.0 10.0 ; END
+  END Address[0]
+  PIN Address[1]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.0 9.8 2.5 10.0 ; END
+  END Address[1]
+  PIN Address[2]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.5 9.8 3.0 10.0 ; END
+  END Address[2]
+  PIN Address[3]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.0 9.8 3.5 10.0 ; END
+  END Address[3]
+  PIN Address[4]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.5 9.8 4.0 10.0 ; END
+  END Address[4]
+  PIN Address[5]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.0 9.8 4.5 10.0 ; END
+  END Address[5]
+  PIN Address[6]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.5 9.8 5.0 10.0 ; END
+  END Address[6]
+  PIN Address[7]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.0 9.8 5.5 10.0 ; END
+  END Address[7]
+  PIN Address[8]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.5 9.8 6.0 10.0 ; END
+  END Address[8]
+  PIN Address[9]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.0 9.8 6.5 10.0 ; END
+  END Address[9]
+  PIN Address[10]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.5 9.8 7.0 10.0 ; END
+  END Address[10]
+  PIN Address[11]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.0 9.8 7.5 10.0 ; END
+  END Address[11]
+  PIN Address[12]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.5 9.8 8.0 10.0 ; END
+  END Address[12]
+  PIN Address[13]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 8.0 9.8 8.5 10.0 ; END
+  END Address[13]
+  PIN Address[14]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 8.5 9.8 9.0 10.0 ; END
+  END Address[14]
+  PIN Address[15]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 9.0 9.8 9.5 10.0 ; END
+  END Address[15]
+  PIN Address[16]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.0 9.5 0.5 9.8 ; END
+  END Address[16]
+  PIN Address[17]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.5 9.5 1.0 9.8 ; END
+  END Address[17]
+  PIN Address[18]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.0 9.5 1.5 9.8 ; END
+  END Address[18]
+  PIN Address[19]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.5 9.5 2.0 9.8 ; END
+  END Address[19]
+  PIN Address[20]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.0 9.5 2.5 9.8 ; END
+  END Address[20]
+  PIN Address[21]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.5 9.5 3.0 9.8 ; END
+  END Address[21]
+  PIN Address[22]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.0 9.5 3.5 9.8 ; END
+  END Address[22]
+  PIN Address[23]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.5 9.5 4.0 9.8 ; END
+  END Address[23]
+  PIN Address[24]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.0 9.5 4.5 9.8 ; END
+  END Address[24]
+  PIN Address[25]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.5 9.5 5.0 9.8 ; END
+  END Address[25]
+  PIN Address[26]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.0 9.5 5.5 9.8 ; END
+  END Address[26]
+  PIN Address[27]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.5 9.5 6.0 9.8 ; END
+  END Address[27]
+  PIN Address[28]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.0 9.5 6.5 9.8 ; END
+  END Address[28]
+  PIN Address[29]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.5 9.5 7.0 9.8 ; END
+  END Address[29]
+  PIN Address[30]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.0 9.5 7.5 9.8 ; END
+  END Address[30]
+  PIN Address[31]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.5 9.5 8.0 9.8 ; END
+  END Address[31]
+  PIN Write_Data[0]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.0 0.0 0.5 0.2 ; END
+  END Write_Data[0]
+  PIN Write_Data[1]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.5 0.0 1.0 0.2 ; END
+  END Write_Data[1]
+  PIN Write_Data[2]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.0 0.0 1.5 0.2 ; END
+  END Write_Data[2]
+  PIN Write_Data[3]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.5 0.0 2.0 0.2 ; END
+  END Write_Data[3]
+  PIN Write_Data[4]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.0 0.0 2.5 0.2 ; END
+  END Write_Data[4]
+  PIN Write_Data[5]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.5 0.0 3.0 0.2 ; END
+  END Write_Data[5]
+  PIN Write_Data[6]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.0 0.0 3.5 0.2 ; END
+  END Write_Data[6]
+  PIN Write_Data[7]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.5 0.0 4.0 0.2 ; END
+  END Write_Data[7]
+  PIN Write_Data[8]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.0 0.0 4.5 0.2 ; END
+  END Write_Data[8]
+  PIN Write_Data[9]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.5 0.0 5.0 0.2 ; END
+  END Write_Data[9]
+  PIN Write_Data[10]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.0 0.0 5.5 0.2 ; END
+  END Write_Data[10]
+  PIN Write_Data[11]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.5 0.0 6.0 0.2 ; END
+  END Write_Data[11]
+  PIN Write_Data[12]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.0 0.0 6.5 0.2 ; END
+  END Write_Data[12]
+  PIN Write_Data[13]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.5 0.0 7.0 0.2 ; END
+  END Write_Data[13]
+  PIN Write_Data[14]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.0 0.0 7.5 0.2 ; END
+  END Write_Data[14]
+  PIN Write_Data[15]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.5 0.0 8.0 0.2 ; END
+  END Write_Data[15]
+  PIN Write_Data[16]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.0 0.2 0.5 0.4 ; END
+  END Write_Data[16]
+  PIN Write_Data[17]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 0.5 0.2 1.0 0.4 ; END
+  END Write_Data[17]
+  PIN Write_Data[18]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.0 0.2 1.5 0.4 ; END
+  END Write_Data[18]
+  PIN Write_Data[19]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 1.5 0.2 2.0 0.4 ; END
+  END Write_Data[19]
+  PIN Write_Data[20]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.0 0.2 2.5 0.4 ; END
+  END Write_Data[20]
+  PIN Write_Data[21]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 2.5 0.2 3.0 0.4 ; END
+  END Write_Data[21]
+  PIN Write_Data[22]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.0 0.2 3.5 0.4 ; END
+  END Write_Data[22]
+  PIN Write_Data[23]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 3.5 0.2 4.0 0.4 ; END
+  END Write_Data[23]
+  PIN Write_Data[24]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.0 0.2 4.5 0.4 ; END
+  END Write_Data[24]
+  PIN Write_Data[25]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 4.5 0.2 5.0 0.4 ; END
+  END Write_Data[25]
+  PIN Write_Data[26]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.0 0.2 5.5 0.4 ; END
+  END Write_Data[26]
+  PIN Write_Data[27]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 5.5 0.2 6.0 0.4 ; END
+  END Write_Data[27]
+  PIN Write_Data[28]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.0 0.2 6.5 0.4 ; END
+  END Write_Data[28]
+  PIN Write_Data[29]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 6.5 0.2 7.0 0.4 ; END
+  END Write_Data[29]
+  PIN Write_Data[30]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.0 0.2 7.5 0.4 ; END
+  END Write_Data[30]
+  PIN Write_Data[31]
+    DIRECTION INPUT ; USE SIGNAL ;
+    PORT LAYER M4 ; RECT 7.5 0.2 8.0 0.4 ; END
+  END Write_Data[31]
+  PIN Read_Data[0]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 0.0 4.8 0.5 5.0 ; END
+  END Read_Data[0]
+  PIN Read_Data[1]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 0.5 4.8 1.0 5.0 ; END
+  END Read_Data[1]
+  PIN Read_Data[2]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 1.0 4.8 1.5 5.0 ; END
+  END Read_Data[2]
+  PIN Read_Data[3]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 1.5 4.8 2.0 5.0 ; END
+  END Read_Data[3]
+  PIN Read_Data[4]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 2.0 4.8 2.5 5.0 ; END
+  END Read_Data[4]
+  PIN Read_Data[5]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 2.5 4.8 3.0 5.0 ; END
+  END Read_Data[5]
+  PIN Read_Data[6]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 3.0 4.8 3.5 5.0 ; END
+  END Read_Data[6]
+  PIN Read_Data[7]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 3.5 4.8 4.0 5.0 ; END
+  END Read_Data[7]
+  PIN Read_Data[8]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 4.0 4.8 4.5 5.0 ; END
+  END Read_Data[8]
+  PIN Read_Data[9]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 4.5 4.8 5.0 5.0 ; END
+  END Read_Data[9]
+  PIN Read_Data[10]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 5.0 4.8 5.5 5.0 ; END
+  END Read_Data[10]
+  PIN Read_Data[11]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 5.5 4.8 6.0 5.0 ; END
+  END Read_Data[11]
+  PIN Read_Data[12]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 6.0 4.8 6.5 5.0 ; END
+  END Read_Data[12]
+  PIN Read_Data[13]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 6.5 4.8 7.0 5.0 ; END
+  END Read_Data[13]
+  PIN Read_Data[14]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 7.0 4.8 7.5 5.0 ; END
+  END Read_Data[14]
+  PIN Read_Data[15]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 7.5 4.8 8.0 5.0 ; END
+  END Read_Data[15]
+  PIN Read_Data[16]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 0.0 5.0 0.5 5.2 ; END
+  END Read_Data[16]
+  PIN Read_Data[17]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 0.5 5.0 1.0 5.2 ; END
+  END Read_Data[17]
+  PIN Read_Data[18]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 1.0 5.0 1.5 5.2 ; END
+  END Read_Data[18]
+  PIN Read_Data[19]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 1.5 5.0 2.0 5.2 ; END
+  END Read_Data[19]
+  PIN Read_Data[20]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 2.0 5.0 2.5 5.2 ; END
+  END Read_Data[20]
+  PIN Read_Data[21]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 2.5 5.0 3.0 5.2 ; END
+  END Read_Data[21]
+  PIN Read_Data[22]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 3.0 5.0 3.5 5.2 ; END
+  END Read_Data[22]
+  PIN Read_Data[23]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 3.5 5.0 4.0 5.2 ; END
+  END Read_Data[23]
+  PIN Read_Data[24]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 4.0 5.0 4.5 5.2 ; END
+  END Read_Data[24]
+  PIN Read_Data[25]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 4.5 5.0 5.0 5.2 ; END
+  END Read_Data[25]
+  PIN Read_Data[26]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 5.0 5.0 5.5 5.2 ; END
+  END Read_Data[26]
+  PIN Read_Data[27]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 5.5 5.0 6.0 5.2 ; END
+  END Read_Data[27]
+  PIN Read_Data[28]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 6.0 5.0 6.5 5.2 ; END
+  END Read_Data[28]
+  PIN Read_Data[29]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 6.5 5.0 7.0 5.2 ; END
+  END Read_Data[29]
+  PIN Read_Data[30]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 7.0 5.0 7.5 5.2 ; END
+  END Read_Data[30]
+  PIN Read_Data[31]
+    DIRECTION OUTPUT ; USE SIGNAL ;
+    PORT LAYER M5 ; RECT 7.5 5.0 8.0 5.2 ; END
+  END Read_Data[31]
+
+END Data_Memory
+
+END LIBRARY

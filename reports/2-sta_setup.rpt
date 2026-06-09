@@ -1,0 +1,58 @@
+Startpoint: _3721_ (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: _3778_ (rising edge-triggered flip-flop clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _3721_/CLK (DFFASRHQNx1_ASAP7_75t_R)
+  62.07   62.07 ^ _3721_/QN (DFFASRHQNx1_ASAP7_75t_R)
+  93.26  155.33 v _1907_/Y (NAND4xp25_ASAP7_75t_R)
+  93.58  248.91 ^ _1915_/Y (NAND2xp33_ASAP7_75t_R)
+ 111.37  360.28 v _1922_/Y (NAND5xp2_ASAP7_75t_R)
+  75.12  435.40 ^ _1924_/Y (NAND2xp33_ASAP7_75t_R)
+ 262.99  698.39 v _1925_/Y (NAND2xp33_ASAP7_75t_R)
+ 348.63 1047.02 ^ _1963_/Y (NAND2xp33_ASAP7_75t_R)
+  27.35 1074.37 v _2039_/Y (NAND3xp33_ASAP7_75t_R)
+  39.54 1113.91 ^ _2041_/Y (NAND2xp33_ASAP7_75t_R)
+  34.05 1147.96 v _2042_/Y (NAND2xp33_ASAP7_75t_R)
+  38.08 1186.04 ^ _2043_/Y (MAJIxp5_ASAP7_75t_R)
+  19.15 1205.19 v _2088_/Y (NAND3xp33_ASAP7_75t_R)
+  42.13 1247.33 ^ _2091_/Y (NAND2xp33_ASAP7_75t_R)
+  18.47 1265.79 v _2173_/Y (NAND2xp33_ASAP7_75t_R)
+  43.74 1309.53 ^ _2181_/Y (NAND2xp33_ASAP7_75t_R)
+  18.82 1328.35 v _2348_/Y (NAND2xp33_ASAP7_75t_R)
+  43.96 1372.31 ^ _2363_/Y (NAND2xp33_ASAP7_75t_R)
+  18.87 1391.19 v _2539_/Y (NAND2xp33_ASAP7_75t_R)
+  39.87 1431.06 ^ _2554_/Y (NAND2xp33_ASAP7_75t_R)
+  18.00 1449.06 v _2642_/Y (NAND2xp33_ASAP7_75t_R)
+  35.22 1484.28 ^ _2650_/Y (NAND2xp33_ASAP7_75t_R)
+  17.06 1501.34 v _2694_/Y (NAND2xp33_ASAP7_75t_R)
+  30.51 1531.85 ^ _2697_/Y (NAND2xp33_ASAP7_75t_R)
+  23.70 1555.55 v _2698_/Y (MAJIxp5_ASAP7_75t_R)
+  39.92 1595.47 ^ _2699_/Y (XOR2x2_ASAP7_75t_R)
+   8.99 1604.46 v _2702_/Y (NAND2xp33_ASAP7_75t_R)
+  27.61 1632.07 ^ _2704_/Y (NAND2xp33_ASAP7_75t_R)
+  13.98 1646.05 v _2705_/Y (NAND2xp33_ASAP7_75t_R)
+  64.69 1710.74 ^ _2706_/Y (NAND2xp33_ASAP7_75t_R)
+  19.61 1730.35 v _2738_/Y (NAND2xp33_ASAP7_75t_R)
+  25.27 1755.62 ^ _2739_/Y (NAND2xp33_ASAP7_75t_R)
+   0.00 1755.62 ^ _3778_/D (DFFASRHQNx1_ASAP7_75t_R)
+        1755.62   data arrival time
+
+   2.00    2.00   clock core_clk (rise edge)
+   0.00    2.00   clock network delay (ideal)
+  -0.04    1.96   clock uncertainty
+   0.00    1.96   clock reconvergence pessimism
+           1.96 ^ _3778_/CLK (DFFASRHQNx1_ASAP7_75t_R)
+ -25.08  -23.12   library setup time
+         -23.12   data required time
+---------------------------------------------------------
+         -23.12   data required time
+        -1755.62   data arrival time
+---------------------------------------------------------
+        -1778.74   slack (VIOLATED)
+
+

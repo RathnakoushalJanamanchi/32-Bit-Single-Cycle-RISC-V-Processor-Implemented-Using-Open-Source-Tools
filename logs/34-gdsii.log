@@ -1,0 +1,44 @@
+ERROR: Signal number: 11
+Address: 0x8
+Program Version: KLayout 0.26.2 (2022-01-13 rLatestSourcePackage)
+
+Backtrace:
+/usr/lib/klayout/libklayout_lay.so.0 +0x24b786 lay::SaltDownloadManager::execute(lay::SaltManagerDialog*, lay::Salt&) [??:?]
+/lib/x86_64-linux-gnu/libc.so.6 +0x42520
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0xbf639
+/usr/lib/klayout/libklayout_rba.so.0 +0x43782
+/usr/lib/klayout/libklayout_rba.so.0 +0x47ce2
+/usr/lib/klayout/libklayout_rba.so.0 +0x2a78d
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x22fc35
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x231fc6
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x234c32
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x23a30d rb_vm_exec
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x241295
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x241da6 rb_funcallv_kw
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x13e1bb rb_class_new_instance_pass_kw
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x22fc35
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x231fc6
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x234c32
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x23a30d rb_vm_exec
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x23b072
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x23f2f7
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x24293c rb_funcallv
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0xa69ad rb_protect
+/usr/lib/klayout/libklayout_rba.so.0 +0x40d9e
+/usr/lib/klayout/libklayout_lym.so.0 +0x2f2e2 _ZNK3lym5Macro3runEv
+/usr/lib/klayout/libklayout_lym.so.0 +0x2f455
+/usr/lib/klayout/libklayout_lym.so.0 +0x2f401
+/usr/lib/klayout/libklayout_lay.so.0 +0x10e4ed _ZN3lay15ApplicationBase8init_appEv
+/usr/lib/klayout/klayout +0x4595
+/usr/lib/klayout/libklayout_rba.so.0 +0x24944
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x22fc35
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x231fc6
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x234c32
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0x23a30d rb_vm_exec
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0xa5318
+/lib/x86_64-linux-gnu/libruby-3.0.so.3.0 +0xa8e1a ruby_run_node
+/usr/lib/klayout/libklayout_rba.so.0 +0x273e2 _ZN3rba15RubyInterpreter10initializeERiPPcPFiS1_S3_E
+/usr/lib/klayout/klayout +0x3d1e
+/lib/x86_64-linux-gnu/libc.so.6 +0x29d90
+/lib/x86_64-linux-gnu/libc.so.6 +0x29e40 __libc_start_main
+/usr/lib/klayout/klayout +0x3e95

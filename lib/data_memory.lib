@@ -1,0 +1,61 @@
+library (data_memory) {
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1mA";
+  capacitive_load_unit (1, pf);
+  nom_voltage : 0.7;
+  nom_temperature : 25;
+  nom_process : 1.0;
+  default_fanout_load : 1.0;
+  default_inout_pin_cap : 0.005;
+  default_input_pin_cap : 0.005;
+  default_output_pin_cap : 0.0;
+
+  cell (Data_Memory) {
+    area : 500;
+
+    pin (clk) {
+      direction : input;
+      clock : true;
+      capacitance : 0.005;
+    }
+    pin (MemRead) {
+      direction : input;
+      capacitance : 0.005;
+    }
+    pin (MemWrite) {
+      direction : input;
+      capacitance : 0.005;
+    }
+    bus (Address) {
+      bus_type : bus32;
+      direction : input;
+      capacitance : 0.005;
+    }
+    bus (Write_Data) {
+      bus_type : bus32;
+      direction : input;
+      capacitance : 0.005;
+    }
+    bus (Read_Data) {
+      bus_type : bus32;
+      direction : output;
+      timing () {
+        related_pin : "clk";
+        timing_type : rising_edge;
+        cell_rise (scalar) { values ("1.0"); }
+        cell_fall (scalar) { values ("1.0"); }
+        rise_transition (scalar) { values ("0.02"); }
+        fall_transition (scalar) { values ("0.02"); }
+      }
+    }
+  }
+
+  type (bus32) {
+    base_type : array;
+    data_type : bit;
+    bit_width : 32;
+    bit_from : 31;
+    bit_to : 0;
+  }
+}

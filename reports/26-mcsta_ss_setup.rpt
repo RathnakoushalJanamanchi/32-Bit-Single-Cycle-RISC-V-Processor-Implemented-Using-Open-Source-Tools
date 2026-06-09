@@ -1,0 +1,69 @@
+Startpoint: _3722_ (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: WriteBack_out[31] (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock source latency
+   0.00    0.00 ^ clk (in)
+  21.05   21.05 ^ clkbuf_regs_0_core_clk/Y (BUFx4_ASAP7_75t_R)
+  35.39   56.44 ^ clkbuf_0_clk_regs/Y (BUFx4_ASAP7_75t_R)
+  31.38   87.83 ^ clkbuf_4_2_0_clk_regs/Y (BUFx4_ASAP7_75t_R)
+  30.65  118.48 ^ clkbuf_5_5__f_clk_regs/Y (BUFx4_ASAP7_75t_R)
+   0.00  118.48 ^ _3722_/CLK (DFFASRHQNx1_ASAP7_75t_R)
+ 105.51  223.99 ^ _3722_/QN (DFFASRHQNx1_ASAP7_75t_R)
+  38.55  262.54 v _1907_/Y (NAND4xp75_ASAP7_75t_R)
+  34.23  296.77 v load_slew232/Y (BUFx3_ASAP7_75t_R)
+  19.90  316.67 ^ _1910_/Y (NAND3x1_ASAP7_75t_R)
+  35.44  352.12 v _1922_/Y (NAND5xp2_ASAP7_75t_R)
+  39.29  391.41 v load_slew216/Y (HB1xp67_ASAP7_75t_R)
+  60.76  452.17 v load_slew215/Y (HB3xp67_ASAP7_75t_R)
+  24.47  476.63 ^ _1965_/Y (NAND2xp5_ASAP7_75t_R)
+  19.78  496.42 v _1968_/Y (NAND2xp5_ASAP7_75t_R)
+  33.02  529.44 v fanout176/Y (BUFx3_ASAP7_75t_R)
+  22.30  551.74 ^ _1970_/Y (NAND2xp33_ASAP7_75t_R)
+  67.04  618.78 ^ fanout164/Y (HB1xp67_ASAP7_75t_R)
+  21.66  640.43 v _2325_/Y (NAND2xp33_ASAP7_75t_R)
+  20.17  660.60 ^ _2330_/Y (NAND2xp33_ASAP7_75t_R)
+  32.94  693.54 v _2331_/Y (NAND2xp33_ASAP7_75t_R)
+  38.22  731.75 ^ _2349_/Y (NAND2xp33_ASAP7_75t_R)
+  23.33  755.08 v _2350_/Y (MAJIxp5_ASAP7_75t_R)
+  16.12  771.20 ^ _2351_/Y (NAND3xp33_ASAP7_75t_R)
+  15.24  786.44 v _2354_/Y (NAND2xp33_ASAP7_75t_R)
+  18.71  805.14 ^ _2355_/Y (NAND2xp33_ASAP7_75t_R)
+  20.60  825.74 v _2362_/Y (NAND4xp25_ASAP7_75t_R)
+  20.24  845.98 ^ _2363_/Y (NAND2xp5_ASAP7_75t_R)
+  14.96  860.93 v _2539_/Y (NAND2xp33_ASAP7_75t_R)
+  19.46  880.40 ^ _2554_/Y (NAND2xp5_ASAP7_75t_R)
+  15.78  896.18 v _2642_/Y (NAND2xp33_ASAP7_75t_R)
+  24.81  920.99 ^ _2650_/Y (NAND2xp5_ASAP7_75t_R)
+  15.02  936.01 v _2694_/Y (NAND2xp5_ASAP7_75t_R)
+  18.76  954.77 ^ _2697_/Y (NAND2xp5_ASAP7_75t_R)
+  19.61  974.39 v _2698_/Y (MAJIxp5_ASAP7_75t_R)
+  41.77 1016.16 ^ _2699_/Y (XOR2x2_ASAP7_75t_R)
+  11.11 1027.26 v _2702_/Y (NAND2xp33_ASAP7_75t_R)
+  15.28 1042.54 ^ _2704_/Y (NAND2xp5_ASAP7_75t_R)
+  27.65 1070.20 ^ wire10/Y (BUFx3_ASAP7_75t_R)
+  22.47 1092.67 ^ load_slew9/Y (HB1xp67_ASAP7_75t_R)
+  15.92 1108.59 v _2705_/Y (NAND2xp33_ASAP7_75t_R)
+  44.50 1153.09 ^ _2706_/Y (NAND2x1_ASAP7_75t_R)
+   0.00 1153.09 ^ WriteBack_out[31] (out)
+        1153.09   data arrival time
+
+2000.00 2000.00   clock core_clk (rise edge)
+   0.00 2000.00   clock network delay (propagated)
+ -40.00 1960.00   clock uncertainty
+   0.00 1960.00   clock reconvergence pessimism
+-800.00 1160.00   output external delay
+        1160.00   data required time
+---------------------------------------------------------
+        1160.00   data required time
+        -1153.09   data arrival time
+---------------------------------------------------------
+           6.91   slack (MET)
+
+
+wns max 0.00
+tns max 0.00

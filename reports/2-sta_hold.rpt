@@ -1,0 +1,27 @@
+Startpoint: _3746_ (rising edge-triggered flip-flop clocked by core_clk)
+Endpoint: PC_out[31] (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _3746_/CLK (DFFASRHQNx1_ASAP7_75t_R)
+  49.50   49.50 ^ _3746_/QN (DFFASRHQNx1_ASAP7_75t_R)
+   0.00   49.50 ^ PC_out[31] (out)
+          49.50   data arrival time
+
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.02    0.02   clock uncertainty
+   0.00    0.02   clock reconvergence pessimism
+  -0.80   -0.78   output external delay
+          -0.78   data required time
+---------------------------------------------------------
+          -0.78   data required time
+         -49.50   data arrival time
+---------------------------------------------------------
+          50.28   slack (MET)
+
+
